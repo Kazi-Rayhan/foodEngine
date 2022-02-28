@@ -1,11 +1,17 @@
+const foods = document.getElementById('foods');
 document.getElementById('search').addEventListener('keyup',event =>{
    const query = event.target.value;
-    searchFood(query);
+    if(query.length == 0){
+      foods.textContent = '';
+    }   
+    else{
+      searchFood(query);
+    }
+   
 })
 
 
 
-const foods = document.getElementById('foods');
 
 
  function searchFood(query){
