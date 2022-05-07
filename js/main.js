@@ -87,7 +87,7 @@ function populateHtml(food){
     <p>
     ${details.strInstructions}
     </P>
-    <a href="${details.strYoutube}" class="btn btn-danger">
+    <a href="${details.strYoutube}" class="btn btn-danger" target="_blank">
         Watch Youtube
     </a>
     <h3>
